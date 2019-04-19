@@ -1,3 +1,16 @@
+@font-face {
+  font-family: myFont;
+  src: url(../MyriadProRegular/MyriadPro-Regular.woff);
+}
+
+div {
+  font-family: myFont;
+}
+
+body {
+  background-color: rgba(204, 198, 198, 0.301);
+}
+
 .Rectangle_Blue_Round {
   background-color: rgb(0, 174, 239);
   border-radius: 0px 50px 50px 0px;
@@ -18,24 +31,64 @@
   /* background-color: rgb(0, 174, 239); */
   color: white;
   font-size: 65%;
+  margin-left: -30px;
 }
-.middle {
+.right {
   position: absolute;
   top: 50%;
   left: 80%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-}
-li {
-  text-transform: uppercase;
-  font-size: 70%;
-  margin-left: -10px;
+  display: block;
+  max-width: 230px;
+  max-height: 95px;
+  width: auto;
+  height: auto;
 }
 
-/* ul li {
-  white-space: nowrap;
-  margin-left: -10px;
-} */
+.right img {
+  width: 100%;
+}
+
+.right-small {
+  position: absolute;
+  right: 0px;
+  width: 160px;
+  height: 30px;
+  padding: 0;
+}
+
+.right-small img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.right-small-infolinia {
+  font-size: 50%;
+  position: absolute;
+  right: 0px;
+  width: 145px;
+  height: 30px;
+  padding-top: 29px;
+  color: rgb(0, 174, 239);
+}
+
+.title-bar {
+  background: rgb(0, 174, 239);
+  padding: 13px;
+}
+
+li {
+  text-transform: uppercase;
+  font-size: 80%;
+  /* margin-left: -10px; */
+}
 
 a {
   color: black;
@@ -44,10 +97,14 @@ a {
 .promocje {
   border: solid rgb(0, 174, 239);
   border-width: 1.5px;
-  font-weight: bold;
+  font-weight: normal;
   color: rgb(0, 174, 239);
   padding: 5px;
   margin: -5px;
+}
+
+.promocje:hover {
+  font-weight: bold;
 }
 a:hover {
   text-decoration: underline;
@@ -57,4 +114,5 @@ a:hover {
 .grid-container {
   border-bottom: solid rgb(0, 174, 239);
   border-width: 1.5px 0px;
+  background-color: white;
 }
